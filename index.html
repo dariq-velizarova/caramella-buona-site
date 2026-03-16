@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Caramella Buona</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+.btn-contacts {
+    background-color: #d6468e;
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+/* Typography */
+h1 { font-size: 3rem; font-weight: 300; }
+h2 { font-size: 2.5rem; margin-bottom: 20px; }
+.pink { color: #d6468e; font-weight: bold; }
+.subtitle { font-size: 1.2rem; margin: 10px 0; }
+
+/* Grid and Cards */
+.content-grid {
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.card.reverse { flex-direction: row-reverse; }
+
+.card img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.btn-blue {
+    display: inline-block;
+    background-color: #0073bc;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Emergency Number Box */
+.emergency-box {
+    border: 3px solid #28a745;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px 0;
+    display: inline-block;
+}
+
+.number-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Location Grid */
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 30px;
+    color: white;
+}
+
+.loc-card { padding: 40px 20px; }
+.pink-bg { background-color: #c45694; }
+.gray-bg { background-color: #6c757d; }
+.blue-bg { background-color: #0073bc; }
+
+.loc-card h4 { margin-bottom: 15px; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">La Caramella Buona</div>
+            <div class="logo">
+                <img src="logoto.png" alt="Logo">
+            </div>
+            <div class="nav-right">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#" class="btn-contacts">Contacts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>La Caramella Buona</h1>
+            <p class="subtitle pink">Welcome!</p>
+        </section>
+
+        <section class="content-grid">
+            <div class="card">
+                <div class="text-side">
+                    <h3>Guide against violence against women</h3>
+                    <a href="#" class="btn-blue">Read here:</a>
+                </div>
+                <div class="image-side">
+                    <img src="snimka 1.jpg" alt="Stop Domestic Violence">
+                </div>
+            </div>
+
+            <div class="card reverse">
+                <div class="text-side">
+                    <h3>First aid in case of abuse</h3>
+                    <a href="#" class="btn-blue">Read here:</a>
+                </div>
+                <div class="image-side">
+                    <img src="snimka 2.jpg" alt="Protection">
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>On the front line against child abuse and violence against women since 1997</p>
+        </footer>
+
+        <hr>
+
+        <section class="contacts">
+            <p class="subtitle pink">Contacts</p>
+            <h2>You can contact us here</h2>
+            
+            <div class="emergency-box">
+                <h3>IMPORTANT!</h3>
+                <p>A toll-free number is available for reports and emergencies.<br>
+                For urgent cases, please contact law enforcement.</p>
+                <div class="phone-number">
+                    <span class="numero-verde">Numero Verde</span>
+                    <div class="number-display">800.311.960</div>
+                    <span class="servizio">servizio gratuito</span>
+                </div>
+            </div>
+
+            <div class="location-grid">
+                <div class="loc-card pink-bg">
+                    <h4>National and Legal Headquarters:</h4>
+                    <p>Viale Monte San Michele, 3<br>42121 Reggio Emilia<br>Tel. 0522 439625</p>
+                </div>
+                <div class="loc-card gray-bg">
+                    <h4>Milan office:</h4>
+                    <p>Viale Certosa, 46<br>20155 Milan<br>Tel. 800.311.960</p>
+                </div>
+                <div class="loc-card blue-bg">
+                    <h4>Acuto (FR) office:</h4>
+                    <p>Via Vittorio Emanuele, 41<br>03010 Acuto (FR)<br>Tel. 0775 56076</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
